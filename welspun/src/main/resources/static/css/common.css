@@ -1,0 +1,31 @@
+.dataTables_filter {
+	text-align: left !important;
+}
+
+.pagination {
+	float: right;
+}
+
+.hscroll {
+	overflow-x: auto; /* Horizontal */
+}
+
+table.dataTable tr.odd .sorting_1 {
+	background-color: #E2E4FF !important;
+}
+
+table.dataTable tr.even .sorting_1 {
+	background-color: white !important;
+}
+
+table.dataTable tr.odd {
+	background-color: #E2E4FF !important;
+}
+
+table.dataTable tr.even {
+	background-color: white !important;
+}
+
+.homeHref {
+	font-weight: bold;
+}

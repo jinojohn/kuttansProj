@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<div th:replace="fragments/header :: header-css" />
+<script th:src="@{/js/search.js}"></script>
+</head>
+<body>
+	<div class="page-wrapper chiller-theme">
+		<a id="show-sidebar" class="btn btn-sm btn-dark" href="#"> <i
+			class="fas fa-bars"></i>
+		</a>
+		<div th:replace="fragments/header :: side-bar" />
+
+		<main class="page-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="form-group col-md-12">
+					<h2>ALP Program Search</h2>
+					<hr />
+
+					<div class="container-fluid">
+						<div class="row">
+							<form class="form-inline" action="#" th:object="${alp}"
+								method="post" role="form">
+								<select type="text" class="form-control md-2 mr-sm-2"
+									th:field="*{baseMetal}">
+									<option value="">Base Metal</option>
+									<option value="X65MO">X65MO</option>
+									<option value="X52MS/MO">X52MS/MO</option>
+									<option value="X70M">X70M</option>
+									<option value="X65MS">X65MS</option>
+									<option value="X60MO">X60MO</option>
+								</select> 
+								<label>Thickness:</label> &nbsp;&nbsp;
+								<input type="text"
+									class="form-control md-2 mr-sm-2" th:field="*{thickness}"
+									placeholder="Thickness"> 
+									
+								<label>Temperature:</label>&nbsp;&nbsp;
+								<input type="text" class="form-control md-2 mr-sm-2"
+									th:field="*{temp_impactTemp}" placeholder="Temperature">
+
+								<label>Impact Weld:</label>&nbsp;&nbsp;
+								<input type="text" class="form-control md-2 mr-sm-2"
+									th:field="*{weldActualImpact}" placeholder="Impact Weld">
+									
+								<label>Impact Haz:</label>&nbsp;&nbsp;
+								<input type="text" class="form-control md-2 mr-sm-2"
+									th:field="*{hazReqImpactMin}" placeholder="Impact Haz">	
+									
+									<button class="btn btn-search searchBttn" id ="searchBttn" type="button"><i class="fa fa-search fa-fw"></i>Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<div class="row-fluid hscroll col-md-12">
+				<table id="alpPgmList" class="display table">
+			       <thead>
+			            <tr>
+			            <th class="tbl_id"></th>
+			            	<th>Project</th>
+			                <th>PQR Number</th>
+							<th>Base Metal</th>
+			               	<th>Thickness</th>
+			               	<th>Temperature</th>
+			               	<th>Impact Weld</th>
+			               	<th>Impact Haz</th>
+			            </tr>
+			        </thead>
+				    <tfoot>
+				    	<tr>
+							<th/><th/><th/><th/><th/><th/><th/><th/>
+			           </tr>
+				    </tfoot>
+				</table>
+			</div>
+		</div>
+		</main>
+	</div>
+	
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog modal-xl">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	        <h4 class="modal-title">ALP Program Detail</h4>
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+	          
+	        </div>
+	        <div class="modal-body" id="modal-body-popup">
+			</div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+	        </div>					
+	      </div>
+	    </div>
+	</div>
+</body>
+</html>
