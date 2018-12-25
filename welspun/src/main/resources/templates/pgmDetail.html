@@ -1,0 +1,611 @@
+<div class="form-horizontal" th:object="${alp}">
+	<div class="col-sm-12">
+		<div class="row">
+			<div class = "col-sm-2"><label><b>Project:</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.project}"/></div>
+			
+			<div class = "col-sm-2"><label><b>PQR Number:</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.pqrNum}"/></div>
+		</div>
+		<div class="row">			
+			<div class = "col-sm-2"><label><b>Base Metal:</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.baseMetal}"/></div>
+			
+			<div class = "col-sm-2"><label><b>Thickness (mm):</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.thickness}"/></div>
+		</div>
+		<div class="row">
+			<div class = "col-sm-2"><label><b>Diameter (mm):</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.diameter}"/></div>
+			
+			<div class = "col-sm-2"><label><b>Pipe Number</b></label></div>
+			<div class = "col-sm-4"><span th:text="${alp.pipeNum}"/></div>	
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>GMAW (A)
+			</div>
+			<div class="panel-body panel-body-collapse">
+			  <div class="row">
+				<div class = "col-sm-2"><label><b>Gas:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.gas}"/></div>
+				
+				<div class = "col-sm-2"><label><b>FLow Rate:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.flowRate}"/></div>
+			</div>
+			<div class="row">			
+				<div class = "col-sm-2"><label><b>Wire:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.wire}"/></div>
+				
+				<div class = "col-sm-2"><label><b>Diameter:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.gmawDiameter}"/></div>
+			</div>
+			<div class="row">
+				<div class = "col-sm-2"><label><b>Polarity:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.polarity}"/></div>
+				
+				<div class = "col-sm-2"><label><b>Current:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.current}"/></div>	
+			</div>
+			<div class="row">
+				<div class = "col-sm-2"><label><b>Voltage:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.voltage}"/></div>
+				
+				<div class = "col-sm-2"><label><b>Speed:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.speed}"/></div>	
+			</div>
+			<div class="row">
+				<div class = "col-sm-2"><label><b>Heat Input:</b></label></div>
+				<div class = "col-sm-4"><span th:text="${alp.heatInput}"/></div>
+			</div>
+		  
+		  </div>
+		</div>
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Bevel Geometry
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">
+				<div class = "col-sm-2"><label><b>ID Bevel Depth:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idBevelDepth}"/></div>
+					
+					<div class = "col-sm-2"><label><b>Root Face:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.rootFace}"/></div>
+				</div>
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Bevel Depth:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odBevelDepth}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Bevel Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odBevelAngle}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Bevel Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idBevelAngle}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID Consumables
+			</div>
+				<div class="panel-body panel-body-collapse">					
+					<div class="row">
+					<div class = "col-sm-2"><label><b>ID Wire 1:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idWire1}"/></div>
+					
+					<div class = "col-sm-2"><label><b>ID Wire 2:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idWire2}"/></div>
+				</div>
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Wire 3:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idWire3}"/></div>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Flux
+			</div>
+				<div class="panel-body panel-body-collapse">
+					<div class="row">			
+						<div class = "col-sm-2"><label><b>ID Flux:</b></label></div>
+						<div class = "col-sm-4"><span th:text="${alp.idFlux}"/></div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Stick Out and Wire Angles
+			</div>
+				<div class="panel-body panel-body-collapse">
+				<div class="row">
+					<div class = "col-sm-2"><label><b>T2 Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.t2}"/></div>
+					
+					<div class = "col-sm-2"><label><b>T1 Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.t1}"/></div>
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>L Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.l}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>Stick Out T2 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.stickOutT2}"/></div>
+					
+					<div class = "col-sm-2"><label><b>Stick Out T1 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.stickOutT1}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>Stick Out L (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.stickOutL}"/></div>
+					
+					<div class = "col-sm-2"><label><b>T2-T1 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.T2_T1}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>T1-L (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.T1_L}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Wire Diameter
+			</div>
+				<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID DC Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idDCWireDia}"/></div>
+					
+					<div class = "col-sm-2"><label><b>ID AC1 Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idAC1WireDia}"/></div>	
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>ID AC2 Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idAC2WireDia}"/></div>	
+				</div>
+			</div>
+		</div>
+		
+		<hr/>
+		
+		<h5>ID Weld Parameters</h5>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Current
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Current DC (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idCurrentDCA}"/></div>
+					
+					<div class = "col-sm-2"><label><b>ID Current AC1 (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idCurrentAC1A}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Current AC2 (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idCurrentAC2A}"/></div>
+				</div>
+			</div>
+			</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Voltage
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Voltage DC (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idVoltageDCV}"/></div>
+					
+					<div class = "col-sm-2"><label><b>ID Voltage AC 1 (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idVoltageAC1V}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Voltage AC 2 (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idVoltageAC2V}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>ID - Speed and Heat Input
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Speed (m/min):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idSpeed}"/></div>
+					
+					<div class = "col-sm-2"><label><b>ID Heat Input (KJ/mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.idHeatInput}"/></div>	
+				</div>
+			</div>
+		</div>
+		
+		<hr/>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Consumables
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD DC Wire 1:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odDCWire1}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD AC1 Wire 2:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC1Wire2}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD AC2 wire 3:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC2Wire3}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD AC1 Wire 4:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC3Wire4}"/></div>	
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Flux
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Flux:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odFlux}"/></div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Stick Out and Wire Angles
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">
+					<div class = "col-sm-2"><label><b>T3 Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_t3}"/></div>
+					
+					<div class = "col-sm-2"><label><b>T2 Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_t2}"/></div>
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>T1 Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_t1}"/></div>
+					
+					<div class = "col-sm-2"><label><b>L Angle:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_L}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>Stick Out T3 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_stickOutT3}"/></div>
+					
+					<div class = "col-sm-2"><label><b>Stick Out T2 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_stickOutT2}"/></div>	
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>Stick Out T1 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_stickOutT1}"/></div>
+								
+					<div class = "col-sm-2"><label><b>Stick Out L (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_stickOutL}"/></div>	
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>T3-T2 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_T3_T2}"/></div>
+								
+					<div class = "col-sm-2"><label><b>T2-T1 (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_T2_T1}"/></div>
+				</div>
+				
+				<div class="row">		
+					<div class = "col-sm-2"><label><b>T1-L (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.o_T1_L}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Wire Diameter
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD DC Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odDCWireDia}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD AC1 Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC1WireDia}"/></div>	
+				</div>
+				
+				<div class="row">
+					<div class = "col-sm-2"><label><b>OD AC2 Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC2WireDia}"/></div>	
+					
+					<div class = "col-sm-2"><label><b>OD AC3 Wire Dia (mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odAC3WireDia}"/></div>	
+				</div>
+			</div>
+		</div>
+		
+		<hr/>	
+		
+		<h5>OD Weld Parameters</h5>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Current
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Current DC (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odCurrentDCA}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Current AC1 (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odCurrentAC1A}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Current AC2 (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odCurrentAC2A}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Current AC3 (A):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odCurrentAC3A}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Voltage
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Voltage DC (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odVoltageDCV}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Voltage AC 1 (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odVoltageAC1V}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>ID Voltage AC 2 (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odVoltageAC2V}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Voltage AC 3 (V):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odVoltageAC3V}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>OD - Speed and Heat Input
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>OD Speed (m/min):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odSpeed}"/></div>
+					
+					<div class = "col-sm-2"><label><b>OD Heat Input (KJ/mm):</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.odHeatInput}"/></div>	
+				</div>
+			</div>
+		</div>
+		
+		<hr/>
+		
+		<h5>Impact Test Results</h5>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Impact Temperature
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-2"><label><b>Impact Temp &#x2103;:</b></label></div>
+					<div class = "col-sm-4"><span th:text="${alp.impactTemp}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Required Impact (J)
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>Base Required Impact Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.baseReqImpactMin}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Weld Required Impact Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.weldReqImpactMin}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>HAZ Required Impact Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.hazReqImpactMin}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Base Required Impact Avg:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.baseReqImpactAvg}"/></div>	
+				</div>
+				
+				<div class="row">		
+					<div class = "col-sm-3"><label><b>Weld Required Impact Avg:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.weldReqImpactAvg}"/></div>		
+						
+					<div class = "col-sm-3"><label><b>HAZ Required Impact Avg:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.hazReqImpactAvg}"/></div>			
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Actual Impact (J)
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>Base Actual Impact:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.baseActualImpact}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Weld Actual Impact:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.weldActualImpact}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>HAZ Actual Impact:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.hazActualImpact}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<hr/>
+		<h5>Hardness Test Results</h5>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Hardness Required
+			</div>
+			<div class="panel-body panel-body-collapse">
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>Base Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.baseHardnessMax}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Weld Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.weldMaxHardness}"/></div>	
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>HAZ Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.hazMaxHardness}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Actual Hardness
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>Base Hardness Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_baseMinHardness}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Base Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_baseMaxHardness}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>Weld Hardness Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_weldMinHardness}"/></div>
+					
+					<div class = "col-sm-3"><label><b>Weld Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_weldMaxHardness}"/></div>
+				</div>
+				
+				<div class="row">							
+					<div class = "col-sm-3"><label><b>HAZ Hardness Min:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_hazMinHardness}"/></div>
+					
+					<div class = "col-sm-3"><label><b>HAZ Hardness Max:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.o_hazMaxHardness}"/></div>		
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+		<h5>Tensile Test Results</h5>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>Transverse Weld Tensile Test Results
+			</div>
+			<div class="panel-body panel-body-collapse">
+		
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>TWT UTS (MPa):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.twtUTS1}"/></div>
+					
+					<div class = "col-sm-3"><label><b>TWT Elongation (mm):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.twtElongation1}"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading panel-dtl-title panel-collapsed">
+				<i class="fa fa-fw fa-chevron-right"></i>All Weld Tensile Test Results
+			</div>
+			<div class="panel-body panel-body-collapse">
+			
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>AWT (OD) YS (MPa):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtODYS}"/></div>
+					
+					<div class = "col-sm-3"><label><b>AWT (ID) YS(MPa):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtIDYS}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>AWT (OD) UTS (MPa):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtODUTS}"/></div>
+					
+					<div class = "col-sm-3"><label><b>AWT (ID) UTS(MPa):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtIDUTS}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>AWT (OD) Elongation (mm):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtODElongation}"/></div>
+					
+					<div class = "col-sm-3"><label><b>AWT (ID) Elongation (mm):</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtIDElongation}"/></div>
+				</div>
+				
+				<div class="row">			
+					<div class = "col-sm-3"><label><b>AWT (ID) YS/UTS:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtIDYSUTS}"/></div>
+					
+					<div class = "col-sm-3"><label><b>AWT (OD) YS/UTS:</b></label></div>
+					<div class = "col-sm-3"><span th:text="${alp.awtODYSUTS}"/></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

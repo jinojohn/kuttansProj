@@ -50,5 +50,18 @@ $(document).ready(function($) {
 			 $("#modal-body-popup").html(data);
 		 });
 	    });
+	 
+	 $(document).on('click', '.panel-dtl-title', function(e){
+		    var $this = $(this);
+			if(!$this.hasClass('panel-collapsed')) {
+				$this.parents('.panel').find('.panel-body').slideUp();
+				$this.addClass('panel-collapsed');
+				$this.find('i').removeClass('fa fa-fw fa-chevron-down').addClass('fa fa-fw fa-chevron-right');
+			} else {
+				$this.parents('.panel').find('.panel-body').slideDown();
+				$this.removeClass('panel-collapsed');
+				$this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
+			}
+		});
 	
 });

@@ -31,8 +31,13 @@ table.dataTable tr.even {
 }
 
 .panel-heading.collapsed .fa-chevron-down,
-.panel-heading .fa-chevron-right {
+.panel-heading .fa-chevron-right,
+.panel-body-collapse {
   display: none;
+}
+
+.panel-dtl-title .fa-chevron-right {
+	display: inline-block !important;
 }
 
 .panel-heading.collapsed .fa-chevron-right,
@@ -63,4 +68,11 @@ i.fa {
 }
 .btn {
 	border-color: #4952ef !important;
+}
+
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    overflow-y: auto;
 }
