@@ -2,6 +2,7 @@ package com.welspun.welding.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,11 @@ public class ALPProgramServiceImpl implements ALPProgramService {
 		List<ALPProgram> alpList = new ArrayList<ALPProgram>();
 		alpList = aLPProgramRepository.findFromSearchParam(baseMetal, thickness_1, thickness_2, impactTemp, weldActualImpact, hazActualImpact);
 		return alpList;
+	}
+
+	@Override
+	public ALPProgram findOne(int id) {		
+		return aLPProgramRepository.findById(id).get();
 	}
 
 }

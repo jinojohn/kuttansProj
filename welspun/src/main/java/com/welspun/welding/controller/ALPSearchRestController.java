@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.welspun.welding.model.ALPProgram;
 import com.welspun.welding.service.ALPProgramService;
@@ -37,9 +38,14 @@ public class ALPSearchRestController {
 	}
 	
 	@RequestMapping(value="/alpdetails", method = RequestMethod.GET)
-	public ALPProgram getALPDetails(@RequestParam("id") int id) {
+	public ModelAndView getALPDetails(@RequestParam("id") String id) {
 		ALPProgram alp = new ALPProgram();
-		return alp;
+		alp = aLPProgramService.findOne(Integer.parseInt(id));
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("pgmDetail");
+		modelAndView.addObject("alp", alp);
+		return modelAndView;
 	}
 
 	private Double getImpactHaz(String impactHaz) {

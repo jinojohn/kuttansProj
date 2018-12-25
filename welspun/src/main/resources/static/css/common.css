@@ -29,3 +29,38 @@ table.dataTable tr.even {
 .homeHref {
 	font-weight: bold;
 }
+
+.panel-heading.collapsed .fa-chevron-down,
+.panel-heading .fa-chevron-right {
+  display: none;
+}
+
+.panel-heading.collapsed .fa-chevron-right,
+.panel-heading .fa-chevron-down {
+  display: inline-block;
+}
+
+i.fa {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.collapsed ~ .panel-body {
+  padding: 0;
+}
+
+.panel-heading {
+	cursor: pointer;
+	font-weight : bold;
+	background-color: #E2E4FF;
+	margin-bottom: 5px;
+	color:#4952ef;
+}
+
+.panel-info > .panel-heading {
+	height: 40px;
+	padding-top: 5px;
+}
+.btn {
+	border-color: #4952ef !important;
+}

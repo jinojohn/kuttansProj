@@ -11,7 +11,7 @@ public class ALPProgram {
 
 	@Id
 	@GeneratedValue
-	private Long id;
+	private Integer id;
 
 	private String project;
 	private String pqrNum;
@@ -26,7 +26,7 @@ public class ALPProgram {
 	private String gmawDiameter;
 	private String polarity;
 	private String current;
-	private String volage;
+	private String voltage;
 	private String speed;
 	private String heatInput;
 	private String idBevelDepth;
@@ -165,7 +165,7 @@ public class ALPProgram {
 
 	public ALPProgram(String project, String pqrNum, String baseMetal, Double thickness, String diameter,
 			String pipeNum, String gas, String flowRate, String wire, String gmawDiameter, String polarity,
-			String current, String volage, String speed, String heatInput, String idBevelDepth, String rootFace,
+			String current, String voltage, String speed, String heatInput, String idBevelDepth, String rootFace,
 			String odBevelDepth, String odBevelAngle, String idBevelAngle, String idWire1, String idWire2,
 			String idWire3, String t2, String t1, String l, String stickOutT2, String stickOutT1, String stickOutL,
 			String t2_T1, String t1_L, String idDCWireDia, String idAC1WireDia, String idAC2WireDia,
@@ -202,7 +202,7 @@ public class ALPProgram {
 		this.gmawDiameter = gmawDiameter;
 		this.polarity = polarity;
 		this.current = current;
-		this.volage = volage;
+		this.voltage = voltage;
 		this.speed = speed;
 		this.heatInput = heatInput;
 		this.idBevelDepth = idBevelDepth;
@@ -334,11 +334,11 @@ public class ALPProgram {
 		this.od_CeCSA = od_CeCSA;
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -438,12 +438,12 @@ public class ALPProgram {
 		this.current = current;
 	}
 
-	public String getVolage() {
-		return volage;
+	public String getVoltage() {
+		return voltage;
 	}
 
-	public void setVolage(String volage) {
-		this.volage = volage;
+	public void setVoltage(String voltage) {
+		this.voltage = voltage;
 	}
 
 	public String getSpeed() {
