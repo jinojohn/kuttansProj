@@ -17,5 +17,8 @@ public interface ALPProgramRepository extends JpaRepository<ALPProgram, Integer>
 	public List<ALPProgram> findFromSearchParam(@Param("baseMetal") String baseMetal, @Param("thickness_1") Double thickness_1,
 			@Param("thickness_2") Double thickness_2, @Param("impactTemp") Double impactTemp, @Param("weldActualImpact") Double weldActualImpact,
 			@Param("hazActualImpact") Double hazActualImpact);
+	
+	@Query("From AlPProgram a where a.id IN :ids")
+	public List<ALPProgram> findFromIds(@Param("ids") List<Integer> ids);
 
 }

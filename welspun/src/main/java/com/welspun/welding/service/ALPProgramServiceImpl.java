@@ -36,4 +36,11 @@ public class ALPProgramServiceImpl implements ALPProgramService {
 		return aLPProgramRepository.findById(id).get();
 	}
 
+	@Override
+	public List<ALPProgram> findFromIds(List<Integer> ids) {
+		List<ALPProgram> alpList = new ArrayList<ALPProgram>();
+		alpList = aLPProgramRepository.findFromIds(ids);
+		return alpList;
+	}
+
 }

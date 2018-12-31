@@ -12,5 +12,7 @@ public interface ALPProgramService {
 	
 	public List<ALPProgram> findSearchSpecificParam(String baseMetal, Double thickness_1, Double thickness_2,
 			Double impactTemp, Double weldActualImpact, Double hazActualImpact);
+	
+	public List<ALPProgram> findFromIds(List<Integer> ids);
 
 }

@@ -1,0 +1,16 @@
+.report-modal-body {
+    max-height:calc(100vh - 150px);
+    overflow-y:auto;
+    overflow-x:auto;
+}
+.report-pre {
+    width:100%;
+    overflow-x:auto;
+    word-wrap:normal;
+    margin:1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}

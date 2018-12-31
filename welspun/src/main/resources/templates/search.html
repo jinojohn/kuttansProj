@@ -72,6 +72,8 @@
 				<table id="alpPgmList" class="display table">
 					<thead>
 						<tr>
+							<th>
+							</th>								
 							<th class="tbl_id"></th>
 							<th>Project</th>
 							<th>PQR Number</th>
@@ -92,10 +94,18 @@
 							<th />
 							<th />
 							<th />
+							<th />
 						</tr>
 					</tfoot>
 				</table>
 			</div>
+			<div class = "row">
+				<div class="col-md-12">
+					<button type="button" class="btn btn-primary compare-btn modal-toggle" data-toggle="modal"
+					data-target="#compModal" >Compare</button>
+				</div>
+			</div>
+		
 		</div>
 		</main>
 	</div>
@@ -110,6 +120,25 @@
 
 				</div>
 				<div class="modal-body" id="modal-body-popup"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="compModal">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">ALP Program Comparison</h4>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">X</button>
+
+				</div>
+				<pre class="report-pre modal-body report-modal-body overflow-panel wide-load" id="comp-modal-body-popup">
+				
+				</pre>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
 				</div>

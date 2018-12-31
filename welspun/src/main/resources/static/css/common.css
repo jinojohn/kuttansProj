@@ -6,8 +6,10 @@
 	float: right;
 }
 
-.hscroll {
-	overflow-x: auto; /* Horizontal */
+@media screen and (max-width:1199px) {
+	.hscroll {
+		overflow-x: auto;
+	}
 }
 
 table.dataTable tr.odd .sorting_1 {

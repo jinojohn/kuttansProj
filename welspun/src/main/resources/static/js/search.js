@@ -1,16 +1,23 @@
 $(document).ready(function($) {
 	
+	var rows_selected = [];
+	
 	var table = $('#alpPgmList').DataTable({
 		 data:[],
 		 "lengthMenu": [ 5, 10, 50, 100 ],
 		 columns: [
+			 { 
+				 "mRender": function (data, type, row) {
+					 return '<input type="checkbox" class="custom_checkbox big-checkbox">';
+				 }				 
+			 },
 			 { "mData": "id",
 			 "visible":false
 			 },
             {
                 "mData": "project",
                 "mRender": function (data, type, row) {
-                    return '<a href="#" data-toggle="modal" data-id=' +row['id']+ ' data-target="#myModal" class="modal-toggle homeHref" data-title="View">' + data + '</a>';
+                    return '<a href="#" data-toggle="modal" data-id=' +row['id']+ ' data-target="#myModal" class="modal-toggle pgm-dtl-btn homeHref" data-title="View">' + data + '</a>';
                 }
             },
             { "data": "pqrNum" },
@@ -44,7 +51,7 @@ $(document).ready(function($) {
 		 });
 	 });
 	 
-	 $(document).on('click', '.modal-toggle', function(){		 
+	 $(document).on('click', '.pgm-dtl-btn', function(){		 
 		 $.get( "./alpdetails?id=" + $(this).data('id'), function( data ) {
 			 var r = data;
 			 $("#modal-body-popup").html(data);
@@ -63,5 +70,54 @@ $(document).ready(function($) {
 				$this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
 			}
 		});
-	
+	 
+/*	 
+	 $('#alpPgmList tbody').on('click', 'input[type="checkbox"]', function(e){
+		 var $row = $(this).closest('tr');
+
+	      // Get row data
+	      var data = table.row($row).data();
+
+	      // Get row ID
+	      var rowId = data['id'];
+	      var index = $.inArray(rowId, rows_selected);
+	      
+	   // If checkbox is checked and row ID is not in list of selected row IDs
+	      if(this.checked && index === -1){
+	         rows_selected.push(rowId);
+
+	      // Otherwise, if checkbox is not checked and row ID is in list of selected row IDs
+	      } else if (!this.checked && index !== -1){
+	         rows_selected.splice(index, 1);
+	      }
+	 });*/
+	 
+	 $(document).on('click', '.compare-btn', function(){
+		 var rowcollection = table.$(".custom_checkbox:checked", { "page": "all" });
+		 rowcollection.each(function (index, elem) {
+		 var checkbox_value = elem.name;
+		 var $row = elem.closest('tr');
+		 var data = table.row($row).data();
+		 // Get row ID
+	      var rowId = data['id'];
+	      rows_selected.push(rowId);
+		 });
+		 
+		 if(rows_selected && rows_selected.length != 0) {
+			 $.get({
+				    url : "./compare",
+				    traditional: true,
+				    data: {'idList': rows_selected },
+				    success : function(response) {
+				    	$("#comp-modal-body-popup").html(response);
+						 rows_selected = [];
+				    },
+				    error : function(e) {
+				       alert('Error while getting the comparison data',e);
+						 rows_selected = [];
+				    }
+				}); 
+		 }
+		 
+	 });
 });

@@ -1,0 +1,855 @@
+<div class="form-horizontal" th:object="${alpList}">
+
+	<div class="row-fluid hscroll">
+		<table id="compareDtlTbl" class="display table">
+			<thead>
+				<tr>
+					<th:block>
+						<th> Project </th>
+					</th:block>
+					<th:block th:each="alp : ${alpList}">
+						<th th:text="${alp.project}" />
+					</th:block>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>PQR Number</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.pqrNum}" />
+					</th:block>
+				</tr>
+				<tr>
+					<td><b>Base Metal</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.baseMetal}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Thickness (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.thickness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Diameter (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.diameter}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Pipe Number</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.pipeNum}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Gas</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.gas}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>FLow Rate</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.flowRate}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Wire</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.wire}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Diameter</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.gmawDiameter}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Polarity</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.polarity}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Current</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.current}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Voltage</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.voltage}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Speed</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.speed}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Heat Input</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.heatInput}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Bevel Depth</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idBevelDepth}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Root Face</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.rootFace}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Bevel Depth</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odBevelDepth}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Bevel Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odBevelAngle}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Bevel Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idBevelAngle}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Wire 1</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idWire1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Wire 2</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idWire2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Wire 3</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idWire3}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T2 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.t2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T1 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.t1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>L Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.l}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out T2 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.stickOutT2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.stickOutT1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.stickOutL}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T2-T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.T2_T1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T1-L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.T1_L}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID DC Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idDCWireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID AC1 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idAC1WireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID AC2 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idAC2WireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Current DC (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idCurrentDCA}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Current AC1 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idCurrentAC1A}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Current AC2 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idCurrentAC2A}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Voltage DC (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idVoltageDCV}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Voltage AC 1 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idVoltageAC1V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Voltage AC 2 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idVoltageAC2V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Speed (m/min)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idSpeed}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Heat Input (KJ/mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idHeatInput}" />
+					</th:block>
+				</tr>
+				<tr>
+					<td><b>ID Flux</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.idFlux}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD DC Wire 1</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odDCWire1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC1 Wire 2</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC1Wire2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC2 wire 3</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC2Wire3}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC3 Wire 4</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC3Wire4}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T3 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_t3}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T2 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_t2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T1 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_t1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>L Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_L}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out T3 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_stickOutT3}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out T2 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_stickOutT2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_stickOutT1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Stick Out L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_stickOutL}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T3-T2 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_T3_T2}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T2-T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_T2_T1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>T1-L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_T1_L}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD DC Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odDCWireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC1 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC1WireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC2 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC2WireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD AC3 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odAC3WireDia}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Current DC (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odCurrentDCA}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Current AC1 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odCurrentAC1A}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Current AC2 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odCurrentAC2A}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Current AC3 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odCurrentAC3A}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Voltage DC (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odVoltageDCV}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Voltage AC 1 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odVoltageAC1V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>ID Voltage AC 2 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odVoltageAC2V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Voltage AC 3 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odVoltageAC3V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Speed (m/min)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odSpeed}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Heat Input (KJ/mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odHeatInput}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>OD Flux</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.odFlux}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Impact Temp &#x2103;</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.impactTemp}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Required Impact Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.baseReqImpactMin}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Required Impact Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.weldReqImpactMin}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Required Impact Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.hazReqImpactMin}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Required Impact Avg</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.baseReqImpactAvg}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Required Impact Avg</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.weldReqImpactAvg}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Required Impact Avg</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.hazReqImpactAvg}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Actual Impact</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.baseActualImpact}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Actual Impact</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.weldActualImpact}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Actual Impact</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.hazActualImpact}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.baseHardnessMax}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.weldMaxHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.hazMaxHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Hardness Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_baseMinHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Base Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_baseMaxHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Hardness Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_hazMinHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>HAZ Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_hazMaxHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Hardness Min</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_weldMinHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Weld Hardness Max</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.o_weldMaxHardness}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>TWT UTS (MPa)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.twtUTS1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>TWT Elongation (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.twtElongation1}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (OD) YS (MPa)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtODYS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (ID) YS(MPa)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtIDYS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (OD) UTS (MPa)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtODUTS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (ID) UTS(MPa)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtIDUTS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (OD) Elongation (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtODElongation}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (ID) Elongation (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtIDElongation}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (ID) YS/UTS</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtIDYSUTS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>AWT (OD) YS/UTS</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.awtODYSUTS}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>C</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_C}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Si</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Si}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Mn</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Mn}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>P</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_P}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>S</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_S}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Cr</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Cr}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ni</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Ni}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Mo</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Mo}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Cu</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Cu}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ti</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Ti}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Nb</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Nb}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>V</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>B</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_B}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>N</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_N}" />
+					</th:block>
+				</tr>				
+				<tr>
+				<td><b>Al</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Al}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ca</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_Ca}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(PCM)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_CePCM}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(IIW)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_CeIIW}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(CSA)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.id_CeCSA}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>C</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_C}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Si</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Si}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Mn</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Mn}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>P</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_P}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>S</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_S}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Cr</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Cr}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ni</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Ni}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Mo</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Mo}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Cu</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Cu}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ti</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Ti}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Nb</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Nb}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>V</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_V}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>B</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_B}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>N</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_N}" />
+					</th:block>
+				</tr>				
+				<tr>
+				<td><b>Al</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Al}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>Ca</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_Ca}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(PCM)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_CePCM}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(IIW)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_CeIIW}" />
+					</th:block>
+				</tr>
+				<tr>
+				<td><b>CE(CSA)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td th:text="${alp.od_CeCSA}" />
+					</th:block>
+				</tr>
+				
+				
+			</tbody>
+		</table>
+	</div>
+</div>
