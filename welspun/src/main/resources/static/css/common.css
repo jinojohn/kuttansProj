@@ -78,3 +78,12 @@ i.fa {
 .modal-body{
     overflow-y: auto;
 }
+
+.comparetbl td:first-child {
+  color: #4952ef !important;
+}
+
+.comparetbl th:first-child {
+  color: #4952ef !important;
+}
+
