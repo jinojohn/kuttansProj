@@ -1,6 +1,4 @@
-<div class="form-horizontal" th:object="${alpList}">
-
-	<div class="row-fluid hscroll comparetbl">
+<div class="row-fluid hscroll comparetbl" th:object="${alpList}">
 		<table id="compareDtlTbl" class="display table">
 			<thead>
 				<tr>
@@ -43,58 +41,72 @@
 						<td th:text="${alp.pipeNum}" />
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Gas</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.gas}" />
+				<tr class="legend accordion-toggle collapseOne" data-toggle="collapse" data-target="#collapseOne">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Tack Welding</td>
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>FLow Rate</b></td>
+				<tr id="1" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Gas</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.flowRate}" />
+						<td><div id="collapseOne" class="collapse" th:text="${alp.gas}"></td>
+						<!-- <td th:text="${alp.gas}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Wire</b></td>
+				<tr id="2" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>FLow Rate</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.wire}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.flowRate}"></td>
+						<!-- <td th:text="${alp.flowRate}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Diameter</b></td>
+				<tr id="3" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Wire</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.gmawDiameter}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.wire}"></td>
+						<!-- <td th:text="${alp.wire}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Polarity</b></td>
+				<tr id="4" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Diameter</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.polarity}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.gmawDiameter}"></td>
+						<!-- <td th:text="${alp.gmawDiameter}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Current</b></td>
+				<tr id="5" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Polarity</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.current}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.polarity}"></td>
+						<!-- <td th:text="${alp.polarity}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Voltage</b></td>
+				<tr id="6" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Current</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.voltage}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.current}"></td>
+						<!-- <td th:text="${alp.current}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Speed</b></td>
+				<tr id="7" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Voltage</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.speed}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.voltage}"></td>
+						<!-- <td th:text="${alp.voltage}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Heat Input</b></td>
+				<tr id="8" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Speed</b></div></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.heatInput}" />
+					<td><div id="collapseOne" class="collapse" th:text="${alp.speed}"></td>
+						<!-- <td th:text="${alp.speed}" /> -->
+					</th:block>
+				</tr>
+				<tr id="9" class="collapse">
+				<td><div id="collapseOne" class="collapse"><b>Heat Input</b></div></td>
+					<th:block th:each="alp : ${alpList}">
+					<td><div id="collapseOne" class="collapse" th:text="${alp.heatInput}"></td>
+						<!-- <td th:text="${alp.heatInput}" /> -->
 					</th:block>
 				</tr>
 				<tr>
@@ -852,4 +864,3 @@
 			</tbody>
 		</table>
 	</div>
-</div>

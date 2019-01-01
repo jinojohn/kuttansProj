@@ -80,10 +80,18 @@ i.fa {
 }
 
 .comparetbl td:first-child {
-  color: #4952ef !important;
+  color: #4952ef;
 }
 
 .comparetbl th:first-child {
   color: #4952ef !important;
 }
 
+.legend {
+	background-color: #caffa89c;
+}
+
+.legend > td{	
+	color: #ff0505 !important;
+	cursor: pointer;
+}

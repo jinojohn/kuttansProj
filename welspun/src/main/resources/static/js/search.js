@@ -120,4 +120,17 @@ $(document).ready(function($) {
 		 }
 		 
 	 });
+	 
+	 
+	 $(document).on('click', '.collapseOne', function(){
+		 if ($('#1, #2, #3, #4, #5, #6, #7, #8').hasClass("collapse")) {
+			 $('#1, #2, #3, #4, #5, #6, #7, #8').removeClass('collapse').addClass('show');
+		 }
+		 else {
+			 $('#1, #2, #3, #4, #5, #6, #7, #8').removeClass('show').addClass('collapse');;
+		 }
+	 });
+	 
+	 
+	 
 });
