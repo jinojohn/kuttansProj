@@ -46,529 +46,762 @@
 						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Tack Welding</td>
 					</th:block>
 				</tr>
-				<tr id="1" class="collapse">
+				<tr id="tack_1" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Gas</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 						<td><div id="collapseOne" class="collapse" th:text="${alp.gas}"></td>
 						<!-- <td th:text="${alp.gas}" /> -->
 					</th:block>
 				</tr>
-				<tr id="2" class="collapse">
+				<tr id="tack_2" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>FLow Rate</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.flowRate}"></td>
 						<!-- <td th:text="${alp.flowRate}" /> -->
 					</th:block>
 				</tr>
-				<tr id="3" class="collapse">
+				<tr id="tack_3" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Wire</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.wire}"></td>
 						<!-- <td th:text="${alp.wire}" /> -->
 					</th:block>
 				</tr>
-				<tr id="4" class="collapse">
+				<tr id="tack_4" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Diameter</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.gmawDiameter}"></td>
 						<!-- <td th:text="${alp.gmawDiameter}" /> -->
 					</th:block>
 				</tr>
-				<tr id="5" class="collapse">
+				<tr id="tack_5" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Polarity</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.polarity}"></td>
 						<!-- <td th:text="${alp.polarity}" /> -->
 					</th:block>
 				</tr>
-				<tr id="6" class="collapse">
+				<tr id="tack_6" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Current</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.current}"></td>
 						<!-- <td th:text="${alp.current}" /> -->
 					</th:block>
 				</tr>
-				<tr id="7" class="collapse">
+				<tr id="tack_7" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Voltage</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.voltage}"></td>
 						<!-- <td th:text="${alp.voltage}" /> -->
 					</th:block>
 				</tr>
-				<tr id="8" class="collapse">
+				<tr id="tack_8" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Speed</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.speed}"></td>
 						<!-- <td th:text="${alp.speed}" /> -->
 					</th:block>
 				</tr>
-				<tr id="9" class="collapse">
+				<tr id="tack_9" class="collapse">
 				<td><div id="collapseOne" class="collapse"><b>Heat Input</b></div></td>
 					<th:block th:each="alp : ${alpList}">
 					<td><div id="collapseOne" class="collapse" th:text="${alp.heatInput}"></td>
 						<!-- <td th:text="${alp.heatInput}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr class="legend accordion-toggle collapseTwo" data-toggle="collapse" data-target="#collapseTwo">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Bevel Geometry</td>
+					</th:block>
+				</tr>
+				<tr id="idBevel_1" class="collapse">
 				<td><b>ID Bevel Depth</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idBevelDepth}" />
+						<td><div id="collapseTwo" class="collapse" th:text="${alp.idBevelDepth}"></td>
+						<!-- <td th:text="${alp.idBevelDepth}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idBevel_2" class="collapse">
 				<td><b>Root Face</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.rootFace}" />
+						<td><div id="collapseTwo" class="collapse" th:text="${alp.rootFace}"></td>
+						<!-- <td th:text="${alp.rootFace}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idBevel_3" class="collapse">
 				<td><b>OD Bevel Depth</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odBevelDepth}" />
+						<td><div id="collapseTwo" class="collapse" th:text="${alp.odBevelDepth}"></td>
+						<!-- <td th:text="${alp.odBevelDepth}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idBevel_4" class="collapse">
 				<td><b>OD Bevel Angle</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odBevelAngle}" />
+						<td><div id="collapseTwo" class="collapse" th:text="${alp.odBevelAngle}"></td>
+						<!-- <td th:text="${alp.odBevelAngle}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idBevel_5" class="collapse">
 				<td><b>ID Bevel Angle</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idBevelAngle}" />
+						<td><div id="collapseTwo" class="collapse" th:text="${alp.idBevelAngle}"></td>
+						<!-- <td th:text="${alp.idBevelAngle}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapseThree" data-toggle="collapse" data-target="#collapseThree">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID Consumables</td>
+					</th:block>
+				</tr>
+				<tr id="idCons_1" class="collapse">
 				<td><b>ID Wire 1</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idWire1}" />
+						<td><div id="collapseThree" class="collapse" th:text="${alp.idWire1}"></td>
+						<!-- <td th:text="${alp.idWire1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idCons_2" class="collapse">
 				<td><b>ID Wire 2</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idWire2}" />
+						<td><div id="collapseThree" class="collapse" th:text="${alp.idWire2}"></td>
+						<!-- <td th:text="${alp.idWire2}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idCons_3" class="collapse">
 				<td><b>ID Wire 3</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idWire3}" />
+						<td><div id="collapseThree" class="collapse" th:text="${alp.idWire3}"></td>
+						<!-- <td th:text="${alp.idWire3}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>T2 Angle</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.t2}" />
+				
+				<tr class="legend accordion-toggle collapseFour" data-toggle="collapse" data-target="#collapseFour">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID Flux</td>
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>T1 Angle</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.t1}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>L Angle</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.l}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>Stick Out T2 (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.stickOutT2}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>Stick Out T1 (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.stickOutT1}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>Stick Out L (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.stickOutL}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>T2-T1 (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.T2_T1}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>T1-L (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.T1_L}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID DC Wire Dia (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idDCWireDia}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID AC1 Wire Dia (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idAC1WireDia}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID AC2 Wire Dia (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idAC2WireDia}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Current DC (A)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idCurrentDCA}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Current AC1 (A)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idCurrentAC1A}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Current AC2 (A)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idCurrentAC2A}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Voltage DC (V)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idVoltageDCV}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Voltage AC 1 (V)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idVoltageAC1V}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Voltage AC 2 (V)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idVoltageAC2V}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Speed (m/min)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idSpeed}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>ID Heat Input (KJ/mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idHeatInput}" />
-					</th:block>
-				</tr>
-				<tr>
+				<tr id="idFlux_1" class="collapse">
 					<td><b>ID Flux</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.idFlux}" />
+						<td><div id="collapseFour" class="collapse" th:text="${alp.idFlux}"></td>
+						<!-- <td th:text="${alp.idFlux}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD DC Wire 1</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odDCWire1}" />
+				
+				<tr class="legend accordion-toggle collapseFive" data-toggle="collapse" data-target="#collapseFive">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID - Stick Out and Wire Angles</td>
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD AC1 Wire 2</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC1Wire2}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>OD AC2 wire 3</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC2Wire3}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>OD AC3 Wire 4</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC3Wire4}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>T3 Angle</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_t3}" />
-					</th:block>
-				</tr>
-				<tr>
+				<tr id="idStWir_1" class="collapse">
 				<td><b>T2 Angle</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_t2}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.t2}"></td>
+						<!-- <td th:text="${alp.t2}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idStWir_2" class="collapse">
 				<td><b>T1 Angle</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_t1}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.t1}"></td>
+						<!-- <td th:text="${alp.t1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idStWir_3" class="collapse">
 				<td><b>L Angle</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_L}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.l}"></td>
+						<!-- <td th:text="${alp.l}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>Stick Out T3 (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_stickOutT3}" />
-					</th:block>
-				</tr>
-				<tr>
+				<tr id="idStWir_4" class="collapse">
 				<td><b>Stick Out T2 (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_stickOutT2}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.stickOutT2}"></td>
+						<!-- <td th:text="${alp.stickOutT2}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idStWir_5" class="collapse">
 				<td><b>Stick Out T1 (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_stickOutT1}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.stickOutT1}"></td>
+						<!-- <td th:text="${alp.stickOutT1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idStWir_6" class="collapse">
 				<td><b>Stick Out L (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_stickOutL}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.stickOutL}"></td>
+						<!-- <td th:text="${alp.stickOutL}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>T3-T2 (mm)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_T3_T2}" />
-					</th:block>
-				</tr>
-				<tr>
+				<tr id="idStWir_7" class="collapse">
 				<td><b>T2-T1 (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_T2_T1}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.T2_T1}"></td>
+						<!-- <td th:text="${alp.T2_T1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="idStWir_8" class="collapse">
 				<td><b>T1-L (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_T1_L}" />
+						<td><div id="collapseFive" class="collapse" th:text="${alp.T1_L}"></td>
+						<!-- <td th:text="${alp.T1_L}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD DC Wire Dia (mm)</b></td>
+				<tr class="legend accordion-toggle collapseSix" data-toggle="collapse" data-target="#collapseSix">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID - Wire Diameter</td>
+					</th:block>
+				</tr>
+				<tr id="idWirDia_1" class="collapse">
+				<td><b>ID DC Wire Dia (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odDCWireDia}" />
+						<td><div id="collapseSix" class="collapse" th:text="${alp.idDCWireDia}"></td>
+						<!-- <td th:text="${alp.idDCWireDia}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD AC1 Wire Dia (mm)</b></td>
+				<tr id="idWirDia_2" class="collapse">
+				<td><b>ID AC1 Wire Dia (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC1WireDia}" />
+						<td><div id="collapseSix" class="collapse" th:text="${alp.idAC1WireDia}"></td>
+						<!-- <td th:text="${alp.idAC1WireDia}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD AC2 Wire Dia (mm)</b></td>
+				<tr id="idWirDia_3" class="collapse">
+				<td><b>ID AC2 Wire Dia (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC2WireDia}" />
+						<td><div id="collapseSix" class="collapse" th:text="${alp.idAC2WireDia}"></td>
+						<!-- <td th:text="${alp.idAC2WireDia}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD AC3 Wire Dia (mm)</b></td>
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>ID Weld Parameters</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse7" data-toggle="collapse" data-target="#collapse7">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID - Current</td>
+					</th:block>
+				</tr>
+				
+				<tr id="idCur_1" class="collapse">
+				<td><b>ID Current DC (A)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odAC3WireDia}" />
+						<td><div id="collapse7" class="collapse" th:text="${alp.idCurrentDCA}"></td>
+						<!-- <td th:text="${alp.idCurrentDCA}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Current DC (A)</b></td>
+				<tr id="idCur_2" class="collapse">
+				<td><b>ID Current AC1 (A)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odCurrentDCA}" />
+						<td><div id="collapse7" class="collapse" th:text="${alp.idCurrentAC1A}"></td>
+						<!-- <td th:text="${alp.idCurrentAC1A}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Current AC1 (A)</b></td>
+				<tr id="idCur_3" class="collapse">
+				<td><b>ID Current AC2 (A)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odCurrentAC1A}" />
+						<td><div id="collapse7" class="collapse" th:text="${alp.idCurrentAC2A}"></td>
+						<!-- <td th:text="${alp.idCurrentAC2A}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Current AC2 (A)</b></td>
+				
+				<tr class="legend accordion-toggle collapse8" data-toggle="collapse" data-target="#collapse8">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID - Voltage</td>
+					</th:block>
+				</tr>
+				<tr id="idVol_1" class="collapse">
+				<td><b>ID Voltage DC (V)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odCurrentAC2A}" />
+						<td><div id="collapse8" class="collapse" th:text="${alp.idVoltageDCV}"></td>
+						<!-- <td th:text="${alp.idVoltageDCV}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Current AC3 (A)</b></td>
+				<tr id="idVol_2" class="collapse">
+				<td><b>ID Voltage AC 1 (V)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odCurrentAC3A}" />
+						<td><div id="collapse8" class="collapse" th:text="${alp.idVoltageAC1V}"></td>
+						<!-- <td th:text="${alp.idVoltageAC1V}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Voltage DC (V)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odVoltageDCV}" />
-					</th:block>
-				</tr>
-				<tr>
-				<td><b>OD Voltage AC 1 (V)</b></td>
-					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odVoltageAC1V}" />
-					</th:block>
-				</tr>
-				<tr>
+				<tr id="idVol_3" class="collapse">
 				<td><b>ID Voltage AC 2 (V)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odVoltageAC2V}" />
+						<td><div id="collapse8" class="collapse" th:text="${alp.idVoltageAC2V}"></td>
+						<!-- <td th:text="${alp.idVoltageAC2V}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Voltage AC 3 (V)</b></td>
+				
+				<tr class="legend accordion-toggle collapse9" data-toggle="collapse" data-target="#collapse9">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID - Speed and Heat Input</td>
+					</th:block>
+				</tr>
+				
+				<tr id="idSH_1" class="collapse">
+				<td><b>ID Speed (m/min)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odVoltageAC3V}" />
+						<td><div id="collapse9" class="collapse" th:text="${alp.idSpeed}"></td>
+						<!-- <td th:text="${alp.idSpeed}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Speed (m/min)</b></td>
+				<tr id="idSH_2" class="collapse">
+				<td><b>ID Heat Input (KJ/mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odSpeed}" />
+						<td><div id="collapse9" class="collapse" th:text="${alp.idHeatInput}"></td>
+						<!-- <td th:text="${alp.idHeatInput}" /> -->
 					</th:block>
 				</tr>
-				<tr>
-				<td><b>OD Heat Input (KJ/mm)</b></td>
+				
+				<tr class="legend accordion-toggle collapse10" data-toggle="collapse" data-target="#collapse10">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Consumables</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odWire_1" class="collapse">
+				<td><b>OD DC Wire 1</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odHeatInput}" />
+						<td><div id="collapse10" class="collapse" th:text="${alp.odDCWire1}"></td>
+						<!-- <td th:text="${alp.odDCWire1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="odWire_2" class="collapse">
+				<td><b>OD AC1 Wire 2</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse10" class="collapse" th:text="${alp.odAC1Wire2}"></td>
+						<!-- <td th:text="${alp.odAC1Wire2}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odWire_3" class="collapse">
+				<td><b>OD AC2 wire 3</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse10" class="collapse" th:text="${alp.odAC2Wire3}"></td>
+						<!-- <td th:text="${alp.odAC2Wire3}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odWire_4" class="collapse">
+				<td><b>OD AC3 Wire 4</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse10" class="collapse" th:text="${alp.odAC3Wire4}"></td>
+						<!-- <td th:text="${alp.odAC3Wire4}" /> -->
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse11" data-toggle="collapse" data-target="#collapse11">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Flux</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odFlux_1" class="collapse">
 				<td><b>OD Flux</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.odFlux}" />
+						<td><div id="collapse11" class="collapse" th:text="${alp.odFlux}"></td>
+						<!-- <td th:text="${alp.odFlux}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse12" data-toggle="collapse" data-target="#collapse12">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Stick Out and Wire Angles</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odStWir_1" class="collapse">
+				<td><b>T3 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_t3}"></td>
+						<!-- <td th:text="${alp.o_t3}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_2" class="collapse">
+				<td><b>T2 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_t2}"></td>
+						<!-- <td th:text="${alp.o_t2}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_3" class="collapse">
+				<td><b>T1 Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_t1}"></td>
+						<!-- <td th:text="${alp.o_t1}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_4" class="collapse">
+				<td><b>L Angle</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_L}"></td>
+						<!-- <td th:text="${alp.o_L}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_5" class="collapse">
+				<td><b>Stick Out T3 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_stickOutT3}"></td>
+						<!-- <td th:text="${alp.o_stickOutT3}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_6" class="collapse">
+				<td><b>Stick Out T2 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_stickOutT2}"></td>
+						<!-- <td th:text="${alp.o_stickOutT2}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_7" class="collapse">
+				<td><b>Stick Out T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_stickOutT1}"></td>
+						<!-- <td th:text="${alp.o_stickOutT1}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_8" class="collapse">
+				<td><b>Stick Out L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_stickOutL}"></td>
+						<!-- <td th:text="${alp.o_stickOutL}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_9" class="collapse">
+				<td><b>T3-T2 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_T3_T2}"></td>
+						<!-- <td th:text="${alp.o_T3_T2}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_10" class="collapse">
+				<td><b>T2-T1 (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_T2_T1}"></td>
+						<!-- <td th:text="${alp.o_T2_T1}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odStWir_11" class="collapse">
+				<td><b>T1-L (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse12" class="collapse" th:text="${alp.o_T1_L}"></td>
+						<!-- <td th:text="${alp.o_T1_L}" /> -->
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse13" data-toggle="collapse" data-target="#collapse13">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Wire Diameter</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odWireDia_1" class="collapse">
+				<td><b>OD DC Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse13" class="collapse" th:text="${alp.odDCWireDia}"></td>
+						<!-- <td th:text="${alp.odDCWireDia}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odWireDia_2" class="collapse">
+				<td><b>OD AC1 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse13" class="collapse" th:text="${alp.odAC1WireDia}"></td>
+						<!-- <td th:text="${alp.odAC1WireDia}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odWireDia_3" class="collapse">
+				<td><b>OD AC2 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse13" class="collapse" th:text="${alp.odAC2WireDia}"></td>
+						<!-- <td th:text="${alp.odAC2WireDia}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odWireDia_4" class="collapse">
+				<td><b>OD AC3 Wire Dia (mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse13" class="collapse" th:text="${alp.odAC3WireDia}"></td>
+						<!-- <td th:text="${alp.odAC3WireDia}" /> -->
+					</th:block>
+				</tr>
+				
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>OD Weld Parameters</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse14" data-toggle="collapse" data-target="#collapse14">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Current</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odCur_1" class="collapse">
+				<td><b>OD Current DC (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse14" class="collapse" th:text="${alp.odCurrentDCA}"></td>
+						<!-- <td th:text="${alp.odCurrentDCA}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odCur_2" class="collapse">
+				<td><b>OD Current AC1 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse14" class="collapse" th:text="${alp.odCurrentAC1A}"></td>
+						<!-- <td th:text="${alp.odCurrentAC1A}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odCur_3" class="collapse">
+				<td><b>OD Current AC2 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse14" class="collapse" th:text="${alp.odCurrentAC2A}"></td>
+						<!-- <td th:text="${alp.odCurrentAC2A}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odCur_4" class="collapse">
+				<td><b>OD Current AC3 (A)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse14" class="collapse" th:text="${alp.odCurrentAC3A}"></td>
+						<!-- <td th:text="${alp.odCurrentAC3A}" /> -->
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse15" data-toggle="collapse" data-target="#collapse15">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Voltage</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odVol_1" class="collapse">
+				<td><b>OD Voltage DC (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse15" class="collapse" th:text="${alp.odVoltageDCV}"></td>
+						<!-- <td th:text="${alp.odVoltageDCV}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odVol_2" class="collapse">
+				<td><b>OD Voltage AC 1 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse15" class="collapse" th:text="${alp.odVoltageAC1V}"></td>
+						<!-- <td th:text="${alp.odVoltageAC1V}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odVol_3" class="collapse">
+				<td><b>ID Voltage AC 2 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse15" class="collapse" th:text="${alp.odVoltageAC2V}"></td>
+						<!-- <td th:text="${alp.odVoltageAC2V}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odVol_4" class="collapse">
+				<td><b>OD Voltage AC 3 (V)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse15" class="collapse" th:text="${alp.odVoltageAC3V}"></td>
+						<!-- <td th:text="${alp.odVoltageAC3V}" /> -->
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse16" data-toggle="collapse" data-target="#collapse16">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD - Speed and Heat Input</td>
+					</th:block>
+				</tr>
+				
+				<tr id="odSH_1" class="collapse">
+				<td><b>OD Speed (m/min)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse16" class="collapse" th:text="${alp.odSpeed}"></td>
+						<!-- <td th:text="${alp.odSpeed}" /> -->
+					</th:block>
+				</tr>
+				<tr id="odSH_2" class="collapse">
+				<td><b>OD Heat Input (KJ/mm)</b></td>
+					<th:block th:each="alp : ${alpList}">
+						<td><div id="collapse16" class="collapse" th:text="${alp.odHeatInput}"></td>
+						<!-- <td th:text="${alp.odHeatInput}" /> -->
+					</th:block>
+				</tr>
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>Impact Test Results</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse17" data-toggle="collapse" data-target="#collapse17">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Impact Temperature</td>
+					</th:block>
+				</tr>
+				
+				<tr id="temp_1" class="collapse">
 				<td><b>Impact Temp &#x2103;</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.impactTemp}" />
+						<td><div id="collapse17" class="collapse" th:text="${alp.impactTemp}"></td>
+						<!-- <td th:text="${alp.impactTemp}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse18" data-toggle="collapse" data-target="#collapse18">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Required Impact (J)</td>
+					</th:block>
+				</tr>
+				
+				<tr id="req_temp_1" class="collapse">
 				<td><b>Base Required Impact Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.baseReqImpactMin}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.baseReqImpactMin}"></td>
+						<!-- <td th:text="${alp.baseReqImpactMin}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="req_temp_2" class="collapse">
 				<td><b>Weld Required Impact Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.weldReqImpactMin}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.weldReqImpactMin}"></td>
+						<!-- <td th:text="${alp.weldReqImpactMin}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="req_temp_3" class="collapse">
 				<td><b>HAZ Required Impact Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.hazReqImpactMin}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.hazReqImpactMin}"></td>
+						<!-- <td th:text="${alp.hazReqImpactMin}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="req_temp_4" class="collapse">
 				<td><b>Base Required Impact Avg</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.baseReqImpactAvg}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.baseReqImpactAvg}"></td>
+						<!-- <td th:text="${alp.baseReqImpactAvg}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="req_temp_5" class="collapse">
 				<td><b>Weld Required Impact Avg</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.weldReqImpactAvg}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.weldReqImpactAvg}"></td>
+						<!-- <td th:text="${alp.weldReqImpactAvg}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="req_temp_6" class="collapse">
 				<td><b>HAZ Required Impact Avg</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.hazReqImpactAvg}" />
+						<td><div id="collapse18" class="collapse" th:text="${alp.hazReqImpactAvg}"></td>
+						<!-- <td th:text="${alp.hazReqImpactAvg}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse19" data-toggle="collapse" data-target="#collapse19">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Actual Impact (J)</td>
+						</th:block>
+				</tr>
+				
+				<tr id="act_temp_1" class="collapse">
 				<td><b>Base Actual Impact</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.baseActualImpact}" />
+						<td><div id="collapse19" class="collapse" th:text="${alp.baseActualImpact}"></td>
+						<!-- <td th:text="${alp.baseActualImpact}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_temp_2" class="collapse">
 				<td><b>Weld Actual Impact</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.weldActualImpact}" />
+						<td><div id="collapse19" class="collapse" th:text="${alp.weldActualImpact}"></td>
+						<!-- <td th:text="${alp.weldActualImpact}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_temp_3" class="collapse">
 				<td><b>HAZ Actual Impact</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.hazActualImpact}" />
+						<td><div id="collapse19" class="collapse" th:text="${alp.hazActualImpact}"></td>
+						<!-- <td th:text="${alp.hazActualImpact}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>Hardness Test Results</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse20" data-toggle="collapse" data-target="#collapse20">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Hardness Required</td>
+					</th:block>
+				</tr>
+				
+				<tr id="hardness_1" class="collapse">
 				<td><b>Base Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.baseHardnessMax}" />
+						<td><div id="collapse20" class="collapse" th:text="${alp.baseHardnessMax}"></td>
+						<!-- <td th:text="${alp.baseHardnessMax}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="hardness_2" class="collapse">
 				<td><b>Weld Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.weldMaxHardness}" />
+						<td><div id="collapse20" class="collapse" th:text="${alp.weldMaxHardness}"></td>
+						<!-- <td th:text="${alp.weldMaxHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="hardness_3" class="collapse">
 				<td><b>HAZ Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.hazMaxHardness}" />
+						<td><div id="collapse20" class="collapse" th:text="${alp.hazMaxHardness}"></td>
+						<!-- <td th:text="${alp.hazMaxHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse21" data-toggle="collapse" data-target="#collapse21">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Hardness Required</td>
+					</th:block>
+				</tr>
+				<tr id="act_hardness_1" class="collapse">
 				<td><b>Base Hardness Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_baseMinHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_baseMinHardness}"></td>
+						<!-- <td th:text="${alp.o_baseMinHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_hardness_2" class="collapse">
 				<td><b>Base Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_baseMaxHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_baseMaxHardness}"></td>
+						<!-- <td th:text="${alp.o_baseMaxHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_hardness_3" class="collapse">
 				<td><b>HAZ Hardness Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_hazMinHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_hazMinHardness}"></td>
+						<!-- <td th:text="${alp.o_hazMinHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_hardness_4" class="collapse">
 				<td><b>HAZ Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_hazMaxHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_hazMaxHardness}"></td>
+						<!-- <td th:text="${alp.o_hazMaxHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_hardness_5" class="collapse">
 				<td><b>Weld Hardness Min</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_weldMinHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_weldMinHardness}"></td>
+						<!-- <td th:text="${alp.o_weldMinHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="act_hardness_6" class="collapse">
 				<td><b>Weld Hardness Max</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.o_weldMaxHardness}" />
+						<td><div id="collapse21" class="collapse" th:text="${alp.o_weldMaxHardness}"></td>
+						<!-- <td th:text="${alp.o_weldMaxHardness}" /> -->
 					</th:block>
 				</tr>
 				<tr>

@@ -95,3 +95,7 @@ i.fa {
 	color: #ff0505 !important;
 	cursor: pointer;
 }
+
+.legendHeading {
+	background-color: #E2E4FF;
+}
