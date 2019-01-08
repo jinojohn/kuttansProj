@@ -804,292 +804,380 @@
 						<!-- <td th:text="${alp.o_weldMaxHardness}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>Tensile Test Results</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse22" data-toggle="collapse" data-target="#collapse22">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>Transverse Weld Tensile Test Results</td>
+					</th:block>
+				</tr>
+				
+				<tr id="tensile_1" class="collapse">
 				<td><b>TWT UTS (MPa)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.twtUTS1}" />
+						<td><div id="collapse22" class="collapse" th:text="${alp.twtUTS1}"></td>
+						<!-- <td th:text="${alp.twtUTS1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_2" class="collapse">
 				<td><b>TWT Elongation (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.twtElongation1}" />
+						<td><div id="collapse22" class="collapse" th:text="${alp.twtElongation1}"></td>
+						<!-- <td th:text="${alp.twtElongation1}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse23" data-toggle="collapse" data-target="#collapse23">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>All Weld Tensile Test Results</td>
+					</th:block>
+				</tr>
+				
+				<tr id="tensile_awt_1" class="collapse">
 				<td><b>AWT (OD) YS (MPa)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtODYS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtODYS}"></td>
+						<!-- <td th:text="${alp.awtODYS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_2" class="collapse">
 				<td><b>AWT (ID) YS(MPa)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtIDYS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtIDYS}"></td>
+						<!-- <td th:text="${alp.awtIDYS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_3" class="collapse">
 				<td><b>AWT (OD) UTS (MPa)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtODUTS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtODUTS}"></td>
+						<!-- <td th:text="${alp.awtODUTS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_4" class="collapse">
 				<td><b>AWT (ID) UTS(MPa)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtIDUTS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtIDUTS}"></td>
+						<!-- <td th:text="${alp.awtIDUTS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_5" class="collapse">
 				<td><b>AWT (OD) Elongation (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtODElongation}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtODElongation}"></td>
+						<!-- <td th:text="${alp.awtODElongation}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_6" class="collapse">
 				<td><b>AWT (ID) Elongation (mm)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtIDElongation}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtIDElongation}"></td>
+						<!-- <td th:text="${alp.awtIDElongation}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_7" class="collapse">
 				<td><b>AWT (ID) YS/UTS</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtIDYSUTS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtIDYSUTS}"></td>
+						<!-- <td th:text="${alp.awtIDYSUTS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="tensile_awt_8" class="collapse">
 				<td><b>AWT (OD) YS/UTS</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.awtODYSUTS}" />
+						<td><div id="collapse23" class="collapse" th:text="${alp.awtODYSUTS}"></td>
+						<!-- <td th:text="${alp.awtODYSUTS}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legendHeading">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><h6><b>Chemical Analysis</b></h6></td>
+					</th:block>
+				</tr>
+				
+				<tr class="legend accordion-toggle collapse24" data-toggle="collapse" data-target="#collapse24">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>ID</td>
+					</th:block>
+				</tr>
+				
+				<tr id="c_id_1" class="collapse">
 				<td><b>C</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_C}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_C}"></td>
+						<!-- <td th:text="${alp.id_C}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_2" class="collapse">
 				<td><b>Si</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Si}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Si}"></td>
+						<!-- <td th:text="${alp.id_Si}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_3" class="collapse">
 				<td><b>Mn</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Mn}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Mn}"></td>
+						<!-- <td th:text="${alp.id_Mn}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_4" class="collapse">
 				<td><b>P</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_P}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_P}"></td>
+						<!-- <td th:text="${alp.id_P}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_5" class="collapse">
 				<td><b>S</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_S}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_S}"></td>
+						<!-- <td th:text="${alp.id_S}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_6" class="collapse">
 				<td><b>Cr</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Cr}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Cr}"></td>
+						<!-- <td th:text="${alp.id_Cr}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_7" class="collapse">
 				<td><b>Ni</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Ni}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Ni}"></td>
+						<!-- <td th:text="${alp.id_Ni}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_8" class="collapse">
 				<td><b>Mo</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Mo}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Mo}"></td>
+						<!-- <td th:text="${alp.id_Mo}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_9" class="collapse">
 				<td><b>Cu</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Cu}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Cu}"></td>
+						<!-- <td th:text="${alp.id_Cu}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_10" class="collapse">
 				<td><b>Ti</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Ti}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Ti}"></td>
+						<!-- <td th:text="${alp.id_Ti}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_11" class="collapse">
 				<td><b>Nb</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Nb}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Nb}"></td>
+						<!-- <td th:text="${alp.id_Nb}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_12" class="collapse">
 				<td><b>V</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_V}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_V}"></td>
+						<!-- <td th:text="${alp.id_V}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_13" class="collapse">
 				<td><b>B</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_B}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_B}"></td>
+						<!-- <td th:text="${alp.id_B}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_14" class="collapse">
 				<td><b>N</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_N}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_N}"></td>
+						<!-- <td th:text="${alp.id_N}" /> -->
 					</th:block>
 				</tr>				
-				<tr>
+				<tr id="c_id_15" class="collapse">
 				<td><b>Al</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Al}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Al}"></td>
+						<!-- <td th:text="${alp.id_Al}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_16" class="collapse">
 				<td><b>Ca</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_Ca}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_Ca}"></td>
+						<!-- <td th:text="${alp.id_Ca}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_17" class="collapse">
 				<td><b>CE(PCM)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_CePCM}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_CePCM}"></td>
+						<!-- <td th:text="${alp.id_CePCM}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_18" class="collapse">
 				<td><b>CE(IIW)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_CeIIW}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_CeIIW}"></td>
+						<!-- <td th:text="${alp.id_CeIIW}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_id_19" class="collapse">
 				<td><b>CE(CSA)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.id_CeCSA}" />
+						<td><div id="collapse24" class="collapse" th:text="${alp.id_CeCSA}"></td>
+						<!-- <td th:text="${alp.id_CeCSA}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				
+				<tr class="legend accordion-toggle collapse25" data-toggle="collapse" data-target="#collapse25">
+					<th:block>
+						<td th:colspan="${#lists.size(alpList) +1}"><i class="fa fa-fw fa-chevron-right"></i>OD</td>
+					</th:block>
+				</tr>
+				
+				<tr id="c_od_1" class="collapse">
 				<td><b>C</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_C}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_C}"></td>
+						<!-- <td th:text="${alp.od_C}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_2" class="collapse">
 				<td><b>Si</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Si}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Si}"></td>
+						<!-- <td th:text="${alp.od_Si}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_3" class="collapse">
 				<td><b>Mn</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Mn}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Mn}"></td>
+						<!-- <td th:text="${alp.od_Mn}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_4" class="collapse">
 				<td><b>P</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_P}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_P}"></td>
+						<!-- <td th:text="${alp.od_P}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_5" class="collapse">
 				<td><b>S</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_S}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_S}"></td>
+						<!-- <td th:text="${alp.od_S}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_6" class="collapse">
 				<td><b>Cr</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Cr}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Cr}"></td>
+						<!-- <td th:text="${alp.od_Cr}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_7" class="collapse">
 				<td><b>Ni</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Ni}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Ni}"></td>
+						<!-- <td th:text="${alp.od_Ni}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_8" class="collapse">
 				<td><b>Mo</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Mo}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Mo}"></td>
+						<!-- <td th:text="${alp.od_Mo}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_9" class="collapse">
 				<td><b>Cu</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Cu}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Cu}"></td>
+						<!-- <td th:text="${alp.od_Cu}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_10" class="collapse">
 				<td><b>Ti</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Ti}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Ti}"></td>
+						<!-- <td th:text="${alp.od_Ti}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_11" class="collapse">
 				<td><b>Nb</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Nb}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Nb}"></td>
+						<!-- <td th:text="${alp.od_Nb}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_12" class="collapse">
 				<td><b>V</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_V}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_V}"></td>
+						<!-- <td th:text="${alp.od_V}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_13" class="collapse">
 				<td><b>B</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_B}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_B}"></td>
+						<!-- <td th:text="${alp.od_B}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_14" class="collapse">
 				<td><b>N</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_N}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_N}"></td>
+						<!-- <td th:text="${alp.od_N}" /> -->
 					</th:block>
 				</tr>				
-				<tr>
+				<tr id="c_od_15" class="collapse">
 				<td><b>Al</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Al}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Al}"></td>
+						<!-- <td th:text="${alp.od_Al}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_16" class="collapse">
 				<td><b>Ca</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_Ca}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_Ca}"></td>
+						<!-- <td th:text="${alp.od_Ca}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_17" class="collapse">
 				<td><b>CE(PCM)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_CePCM}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_CePCM}"></td>
+						<!-- <td th:text="${alp.od_CePCM}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_18" class="collapse">
 				<td><b>CE(IIW)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_CeIIW}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_CeIIW}"></td>
+						<!-- <td th:text="${alp.od_CeIIW}" /> -->
 					</th:block>
 				</tr>
-				<tr>
+				<tr id="c_od_19" class="collapse">
 				<td><b>CE(CSA)</b></td>
 					<th:block th:each="alp : ${alpList}">
-						<td th:text="${alp.od_CeCSA}" />
+						<td><div id="collapse25" class="collapse" th:text="${alp.od_CeCSA}"></td>
+						<!-- <td th:text="${alp.od_CeCSA}" /> -->
 					</th:block>
 				</tr>
 				

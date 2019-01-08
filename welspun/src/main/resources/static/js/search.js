@@ -375,6 +375,53 @@ $(document).ready(function($) {
 		 }
 	 });
 	 
+	 $(document).on('click', '.collapse22', function(){
+		 var $this = $(this);
+		 if ($('#tensile_1, #tensile_2').hasClass("collapse")) {
+			 $('#tensile_1, #tensile_2').removeClass('collapse').addClass('show');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
+		 }
+		 else {
+			 $('#tensile_1, #tensile_2').removeClass('show').addClass('collapse');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-down').addClass('fa fa-fw fa-chevron-right');
+		 }
+	 });
+	 
+	 $(document).on('click', '.collapse23', function(){
+		 var $this = $(this);
+		 if ($('#tensile_awt_1, #tensile_awt_2, #tensile_awt_3, #tensile_awt_4, #tensile_awt_5, #tensile_awt_6, #tensile_awt_7, #tensile_awt_8').hasClass("collapse")) {
+			 $('#tensile_awt_1, #tensile_awt_2, #tensile_awt_3, #tensile_awt_4, #tensile_awt_5, #tensile_awt_6, #tensile_awt_7, #tensile_awt_8').removeClass('collapse').addClass('show');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
+		 }
+		 else {
+			 $('#tensile_awt_1, #tensile_awt_2, #tensile_awt_3, #tensile_awt_4, #tensile_awt_5, #tensile_awt_6, #tensile_awt_7, #tensile_awt_8').removeClass('show').addClass('collapse');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-down').addClass('fa fa-fw fa-chevron-right');
+		 }
+	 });
+	 
+	 $(document).on('click', '.collapse24', function(){
+		 var $this = $(this);
+		 if ($('#c_id_1, #c_id_2, #c_id_3, #c_id_4, #c_id_5, #c_id_6, #c_id_7, #c_id_8, #c_id_9, #c_id_10, #c_id_11, #c_id_12, #c_id_13, #c_id_14, #c_id_15, #c_id_16, #c_id_17, #c_id_18, #c_id_19').hasClass("collapse")) {
+			 $('#c_id_1, #c_id_2, #c_id_3, #c_id_4, #c_id_5, #c_id_6, #c_id_7, #c_id_8, #c_id_9, #c_id_10, #c_id_11, #c_id_12, #c_id_13, #c_id_14, #c_id_15, #c_id_16, #c_id_17, #c_id_18, #c_id_19').removeClass('collapse').addClass('show');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
+		 }
+		 else {
+			 $('#c_id_1, #c_id_2, #c_id_3, #c_id_4, #c_id_5, #c_id_6, #c_id_7, #c_id_8, #c_id_9, #c_id_10, #c_id_11, #c_id_12, #c_id_13, #c_id_14, #c_id_15, #c_id_16, #c_id_17, #c_id_18, #c_id_19').removeClass('show').addClass('collapse');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-down').addClass('fa fa-fw fa-chevron-right');
+		 }
+	 });
+	 
+	 $(document).on('click', '.collapse25', function(){
+		 var $this = $(this);
+		 if ($('#c_od_1, #c_od_2, #c_od_3, #c_od_4, #c_od_5, #c_od_6, #c_od_7, #c_od_8, #c_od_9, #c_od_10, #c_od_11, #c_od_12, #c_od_13, #c_od_14, #c_od_15, #c_od_16, #c_od_17, #c_od_18, #c_od_19').hasClass("collapse")) {
+			 $('#c_od_1, #c_od_2, #c_od_3, #c_od_4, #c_od_5, #c_od_6, #c_od_7, #c_od_8, #c_od_9, #c_od_10, #c_od_11, #c_od_12, #c_od_13, #c_od_14, #c_od_15, #c_od_16, #c_od_17, #c_od_18, #c_od_19').removeClass('collapse').addClass('show');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-right').addClass('fa fa-fw fa-chevron-down');
+		 }
+		 else {
+			 $('#c_od_1, #c_od_2, #c_od_3, #c_od_4, #c_od_5, #c_od_6, #c_od_7, #c_od_8, #c_od_9, #c_od_10, #c_od_11, #c_od_12, #c_od_13, #c_od_14, #c_od_15, #c_od_16, #c_od_17, #c_od_18, #c_od_19').removeClass('show').addClass('collapse');
+			 $this.find('i').removeClass('fa fa-fw fa-chevron-down').addClass('fa fa-fw fa-chevron-right');
+		 }
+	 });
 	 
 	 
 });
